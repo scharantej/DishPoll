@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dish of the Week</title>
+</head>
+<body>
+<h1>Dish of the Week: {{ dish.name }}</h1>
+<img src="{{ dish.image }}" alt="{{ dish.name }}">
+<p>{{ dish.description }}</p>
+<p>Price: {{ dish.price }}</p>
+<a href="/order?dish_id={{ dish.id }}">Order Now</a>
+</body>
+</html>
+
+
